@@ -1,0 +1,168 @@
+mahendra8340/DevOps
+
+Config User
+===========
+git config --global user.name "Mahendra"
+git config --global user.email "myemail@example.com"
+
+generate SSH key
+ssh-keygen -t ed25519 -C "gmk834@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat id_ed25519.pub add this to profile -> settings -> SSH and GPG Keys
+
+
+
+
+echo "# DevOps1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mahendra8340/DevOps1.git
+git push -u origin main
+
+git remote add origin git@github.com:mahendra8340/DevOps1.git
+git branch -M main (Rename master branch to main)
+git push -u origin main(-u upstream)
+
+To display only the name of the current branch you're on:
+git rev-parse --abbrev-ref HEAD
+git branch -a
+
+git fetch origin
+git merge origin/main --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories
+
+
+
+git branch -a --> to see current active brach
+git remote -v --> to see mapped remote URL
+git reset <commitid> --> to revert changes to commitid
+git reset --hard HEAD~1
+
+
+
+-- to udpate with remote deleted branches in lcoal remote repo
+git remote prune origin
+git fetch -p
+
+delete local branch
+git branch -d <brachname>
+git branch -d -r coolbranch (-d to delete, -r to unlink remote tracking branches)
+
+
+Delete remote braches
+git push origion --delete <branchname>
+
+
+git reset <commitId> --> to revert changes
+
+
+Create new branch with old branch contenet
+Option1: git checkout -b new_branch old_branch (-b means new branch)
+Option2: git branch copyOfMyBranch MyBranch
+Option3: checkout to desired branch and git checkout <newbranchname>
+
+
+create empty branch
+git switch --orphan <new branch>
+git commit --allow-empty -m "Initial commit on orphan branch"
+git push -u origin <new branch>
+
+
+git checkout . --> to delete unstagged changes
+git clean -dn --> list to delete unstagged files
+git clean -d --> list to delete unstagged files
+git restore <fileName> --> to delete uncommited changes in file
+
+
+rename branch
+git branch -m oldname newname
+
+
+update origin
+git remote set-url origin <url>
+
+git restore --stagged <file> to unstage
+
+is same as
+git reset <file>
+git checkout <file>
+
+Stash with comment
+git stash push -m "Message"
+git stash apply <index> --> will applu stash but not remove from list
+git stash pop --> will apply latest stash changes and remove from list
+git stash drop 0 --> will remove latest stash
+
+
+
+git restore
+
+
+git reflog -> list all commits including deleted commits
+git reset --hard <commitid>/HEAD~1
+
+to recreate deleted branch
+git checkout <deleted commit id>
+git branch -b <deleted branch name>
+
+git merge types
+1. Fast - forward - No new commits added after all commits merged.
+2. Non fast-forward -> recursive, Octopus, Ort, Subtree - after all commits added, new commit added at top
+
+
+git rebase -> new commits addded for each commit in feature branch
+git cherry-pick -> new commit added in mergin branch
+
+@main branch
+git merge --squash feature-branch (will create all files from from all commits in feature branch but not committed in main branch)
+
+
+
+Tags:
+--------
+git tag   ->list all tags
+git tag 1.0 <commit id>
+git show <tag id>  -> to see files in the commit
+git tag -d <tag id> -> delete tag
+git switch -c <tag id> create new branch with tag content
+git tag -a 1.0 -m "message here"
+
+
+
+Git Remote
+============
+git remote add origin <url>
+git push origin
+git push origin branchname
+git push -u origin branchname
+
+git pull origin
+git branch -r(remote braches)
+git branch -a(all branches)
+git branch(local bracnhes)
+git branch -vv(display tracking bracnhes)
+git ls-remote
+git fetch origin
+git pull
+gti remote
+git remote show origin
+git push origion --delete <branchname>
+git ls-remote
+
+to conenct remote tracking branch with local branch
+git checkout --track <branch name> <remote tracking branch>
+git branch --set-upstream-to=origin/main main
+
+
+git clone 
+
+
+Links
+Git Links
+https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging#_advanced_merging
+https://git-scm.com/docs/merge-strategies
+
+https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings/permission-levels-for-a-user-account-repository
