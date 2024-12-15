@@ -1,0 +1,2 @@
+docker login -u mahendra834
+dckr_pat_jhYO5KLo_XbyPZxCmuuLh3AYL-w

@@ -1,0 +1,8 @@
+Login to https://stripe.com/in
+goto https://dashboard.stripe.com/test/apikeys
+get key and past it in .env file
+install npm
+run npm install express
+npm run start
+open http://localhost:3000, it should load some html content
+create EC2
