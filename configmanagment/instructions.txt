@@ -1,0 +1,23 @@
+Config managment tools used to manage system for new software installs, upgrades, patches by pushing changes to all systems at once.
+tools:
+    1. Puppet
+    2. Chef
+    3. Salt
+    4. Ansible  --> Maintained by Redhat
+
+Ansible is uses Push mechanisam and agentless approch.
+It maintain inventory file. It needs passwordless authnetication to push updates.
+It has dynamic inventory --> If new server created then consider it for next updates. 
+It has good modules to manage r windows and Linux servers.
+Instructions are in yaml file.
+
+Disadvantages:
+    1. Debugging is not easy
+    2. Some times its not easy for windows for adanced modules
+    3. Few performances issues. 
+
+Interview questions
+    1. Programming language uses -> Python
+    2. Supports linux and windows -> Yes, SSH protocol for linux, WinRM protocol for windows
+    3. Puppet and Ansible differneces
+    4. Is ansible use Push or pull?

@@ -1,0 +1,19 @@
+1. Create two Ec2 instances
+2. Install ansible in one instnace/
+3. Setup passwordless authentication from ansible server to target server.(generate SSH key in ansible server copy public to authroized_keys in target keys)
+    1. ssh-copy-id
+    2. ssh-keygen
+4. Add inventory file. add private IPs to inventory file. We can group IPs based on criteria like team or server group  
+    Sample:
+    [dbserver]
+    ip1
+
+    [webserver]
+    ip2
+5. execute few ansible adhoc commands for few commands
+    example: 
+        ansible -i inventory all -m "shell" -a "touch devopsClass" (m -> module, a-> command to execute)
+6. Write playbook for install Nginx, start Nginx
+7. run playbook
+    ansible-playbook -i inventory myfirst-playbook.yaml
+8. Ansible-galaxy role init kubernetes --> to create project playbook structure
