@@ -1,0 +1,25 @@
+1. Create VPC as below.
+    No S3 bucket
+    NAT gateway 1 per AZ
+2. Setup Autoscaling groups
+    Create autoscaling groups
+    during autoscaling groups create launch templates
+    create or select security groups.
+3. Create bastion instance
+    create EC2 isntance in public VPC
+    Copy key.pem to bastion ec3 using below commands
+        scp -i <pem file> <need to copy files> ubuntu@ipaddress:/home/ubuntu
+        scp -i Key.pem Key.pem ubuntu@34.203.232.68:/home/ubuntu
+4. Create python applciation only in EC2 instance in private subnet
+    Create index.html
+    Copy any sample html code
+    run below command   
+        python3 -m http.server 8000
+5. Create load balancer in public subnet
+    Select public subnets in availablity zones
+    Create target groups -> Select port 8000 in target groups
+    Note: creation will take time
+    Create security groups that allow HTTP traffic from port 80 even though all trafiic allowed is applied
+6. Access the application from browser using application load balancer URL
+7. Apply different HTMl code in 2nd EC2 instance
+8. Access ELB url multiple times and verify different page load

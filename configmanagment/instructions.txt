@@ -21,3 +21,6 @@ Interview questions
     2. Supports linux and windows -> Yes, SSH protocol for linux, WinRM protocol for windows
     3. Puppet and Ansible differneces
     4. Is ansible use Push or pull?
+    5. uses YMAL for manifest
+    6. Ansible supports all cloud providers? Yes. For ansible we need only public IP and allows SSH connections. 
+    
