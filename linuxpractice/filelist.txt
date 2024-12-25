@@ -1,0 +1,13 @@
+a
+commands.md
+commandsref
+CONTRIBUTING.md
+ExerciseFiles
+filelist.txt
+LICENSE
+myfiles.tar
+myfiles.tar.bz2
+myfiles.tar.gz
+NOTICE
+README.md
+tesfileforsharing.txt

@@ -1,0 +1,3 @@
+ctrl+A -> begining of line
+ctrl+E -> end of the line
+ctrl+R -> search command in history
