@@ -1,0 +1,2 @@
+Jenkins is configured to observe any git commits or merge requests. If any action triggered then jenkins run few pipes as per configuration.
+Jenkins is orchestator.
