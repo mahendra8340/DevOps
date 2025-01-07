@@ -1,1 +1,2 @@
 Python can work both on linux and windows.
+It is dynamically types programming language.
