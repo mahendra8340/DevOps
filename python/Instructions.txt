@@ -1,2 +1,12 @@
 Python can work both on linux and windows.
 It is dynamically types programming language.
+pip install boto3
+pip list
+pip install virtualenv
+create venv ---> Python -m venv <project-abc>
+Switch of venv ----> source <project-abc>/bin/activate
+exit venv ---> deactivate
+
+
+Package for cli arguemnts sys
+package for environment varibles os
