@@ -8,5 +8,26 @@ Switch of venv ----> source <project-abc>/bin/activate
 exit venv ---> deactivate
 
 
-Package for cli arguemnts sys
-package for environment varibles os
+
+For loop syntax:
+for i in range(10,20):
+    print(i)
+
+while condition:
+    statements
+
+instances_info=
+    {
+    "name":"Instance-001",
+    "uptime":25,
+    "downtime":11
+    }
+
+
+list->mutable  [] , append, remove, slice, sort
+tuple->immutable ()
+sets -> unique {} , add ,remove, issubset, issuperset, difference, interesection, union, 
+
+Package for command line arguments ----> sys
+package for environment varibles   ----> os
+Package for github                 ----> requests
