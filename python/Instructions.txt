@@ -32,3 +32,4 @@ Package for command line arguments ----> sys
 package for environment varibles   ----> os
 Package for github                 ----> requests
 Package for file operations        ----> no need of seprate package
+Package for AWS operations         ----> boto3
