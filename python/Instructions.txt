@@ -1,0 +1,35 @@
+Python can work both on linux and windows.
+It is dynamically types programming language.
+pip install boto3
+pip list
+pip install virtualenv
+create venv ---> Python -m venv <project-abc>
+Switch of venv ----> source <project-abc>/bin/activate
+exit venv ---> deactivate
+
+
+
+For loop syntax:
+for i in range(10,20):
+    print(i)
+
+while condition:
+    statements
+
+instances_info=
+    {
+    "name":"Instance-001",
+    "uptime":25,
+    "downtime":11
+    }
+
+
+list->mutable  [] , append, remove, slice, sort
+tuple->immutable ()
+sets -> unique {} , add ,remove, issubset, issuperset, difference, interesection, union, 
+
+Package for command line arguments ----> sys
+package for environment varibles   ----> os
+Package for github                 ----> requests
+Package for file operations        ----> no need of seprate package
+Package for AWS operations         ----> boto3

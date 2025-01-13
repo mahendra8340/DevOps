@@ -1,1 +1,5 @@
 key.pem
+.tfstate*
+.terraform*
+.terraform/
+.venv/
