@@ -1,0 +1,15 @@
+# Use official Tomcat image from Docker Hub
+FROM tomcat:9.0
+
+# Set the working directory to /usr/local/tomcat/webapps
+WORKDIR /usr/local/tomcat/webapps
+
+# Copy the WAR file into the Tomcat container
+COPY ./target/war-test.war /usr/local/tomcat/webapps/war-test.war
+
+# Expose the Tomcat default port
+EXPOSE 8081
+
+# Start Tomcat server
+CMD ["catalina.sh", "run"]
+
