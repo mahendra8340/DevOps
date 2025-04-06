@@ -1,0 +1,40 @@
+Plan --> Code --> Build --> Test --> Release --> Deploy --> Operate  --> Monitor
+Code --> GitHub
+Build --> Maven
+	Build contains Checkout source, Complie source code, Execute unit test cases, Generate package
+	Output is app package
+		for Java --> jar,War files.
+		Frontend --> Zip
+
+Build tools --> Maven, Gradle, PyBuilder, NPM,PIP
+
+Maven is build tool for Java apps.
+
+Project home
+	Src
+		main
+			java
+			resources
+		test
+			java
+			resources
+	target
+	POM.xml
+	
+Run commands in project home. Must have pom.xml. 
+It is distributed system. This will download remote repos into local.
+
+Commands:
+	mvn clean
+	mvn complie
+	mvn test
+	mvn package
+	mvn install
+	mvn deploy
+
+
+Eclispe setup
+	https://www.geeksforgeeks.org/download-and-install-java-development-kit-jdk-on-windows-mac-and-linux/
+	https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+	https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-enterprise-java-and-web-developers
+	https://www.geeksforgeeks.org/how-to-install-apache-maven-on-windows/
