@@ -1,9 +1,12 @@
 Login to https://stripe.com/in
 goto https://dashboard.stripe.com/test/apikeys
 get key and past it in .env file
+
+
 install npm
-run npm install express
+npm install express
 npm run start
+
 open http://localhost:3000, it should load some html content
 create EC2
 git clone https://github.com/mahendra8340/AWS-Session.git
