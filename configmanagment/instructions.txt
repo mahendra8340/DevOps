@@ -24,3 +24,13 @@ Interview questions
     5. uses YMAL for manifest
     6. Ansible supports all cloud providers? Yes. For ansible we need only public IP and allows SSH connections. 
     
+    
+1. Install Ansible
+2. configure inventory file located at /etc/ansible/hosts
+3. Setup passwordless authentication.
+4. Test connection(ansible all -m ping)
+5. execute adhoc command(ansible -i /etc/ansible/hosts all -m "shell" -a "touch devopstesting")
+6. Write a sample playbook for install and start nginx
+7. Execute ansible-playbook command
+8. test nginx status sudo systemctl status nginx
+    
